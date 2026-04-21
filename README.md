@@ -10,6 +10,7 @@
 | `guide-mock.md` | 始终生效 | Mock 数据编写规范 |
 | `guide-vue2.md` | 匹配 `**/*.vue` 文件时生效 | Vue 编码规范 |
 | `guide-check.md` | 手动触发 | 提交前代码检查清单 |
+| `guide-summary.md` | 手动触发 | 对话上下文总结与知识沉淀 |
 | `guide-init.md` | 手动触发 | 项目 Steering 初始化引导 |
 
 ## 🚀 使用方法
@@ -46,6 +47,10 @@ your-project/
 ### 提交前检查 (`guide-check.md`)
 
 手动触发的代码检查清单，用于提交前排查 Mock 残留、TODO 标记、localhost 引用等问题。
+
+### 对话总结 (`guide-summary.md`)
+
+手动触发，回顾当前对话上下文，将有价值的信息整理并沉淀到对应的 steering 文档中。
 
 ### 项目 Steering 初始化 (`guide-init.md`)
 
