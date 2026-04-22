@@ -19,6 +19,7 @@ fileMatchPattern: "**/*.vue"
 - 字符串中的逗号和括号尽量使用英文半角符号, 为了美观或对齐可以加一个空格; 如果用户明确要求使用中文符号, 则以用户要求为准
 - 网络请求的状态变量命名以 `loading` 结尾(如 `listLoading`, `submitLoading`)
 - loading 状态的结束(置为 `false`)统一放在 promise 的 `finally` 中执行
+- 仅要求变动代码符合规范，不要主动修改无关旧代码，除非用户明确要求
 
 ## region 示例
 
