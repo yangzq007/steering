@@ -43,3 +43,8 @@ inclusion: manual
 - 只整理有长期参考价值的信息，临时性的调试过程不需要记录
 - 追加内容时保持原文档的风格和格式一致
 - 不要重复记录已有的内容
+
+## Git 提交
+
+- 总结完成后，将相关 steering 文件的改动提交 commit
+- commit 信息格式为：`feat: summary# + commit信息`（例如：`feat: summary# 补充接口文档`）
