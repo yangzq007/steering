@@ -13,21 +13,39 @@
 | `guide-summary.md` | 手动触发 | 对话上下文总结与知识沉淀 |
 | `guide-init.md` | 手动触发 | 项目 Steering 初始化引导 |
 
-## 🚀 使用方法
+## 🚀 安装方法
 
-1. 将本仓库中的 `.md` 文件复制到你项目的 `.kiro/steering/` 目录下
-2. 在 Kiro IDE 中打开项目，规则将自动加载
+### 一键安装（推荐）
+
+无需安装 git，一条命令通过 HTTP 直接下载并安装：
+
+```bash
+# 安装到当前项目（默认，仅当前项目生效）
+curl -fsSL https://raw.githubusercontent.com/yangzq007/steering/main/install.sh | bash
+
+# 安装到全局（所有项目生效）
+curl -fsSL https://raw.githubusercontent.com/yangzq007/steering/main/install.sh | bash -s -- global
+
+# 安装到指定项目
+curl -fsSL https://raw.githubusercontent.com/yangzq007/steering/main/install.sh | bash -s -- /path/to/project
+```
+
+### 更新规则
+
+规则有更新时，重新执行同一条安装命令即可，脚本会自动对比并只更新有变化的文件。
+
+### 安装后的目录结构
 
 ```
-your-project/
-├── .kiro/
-│   └── steering/
-│       ├── guide-language.md
-│       ├── guide-mock.md
-│       ├── guide-vue2.md
-│       ├── guide-check.md
-│       └── guide-init.md
-└── src/
+~/.kiro/steering/          ← 全局安装位置
+# 或
+your-project/.kiro/steering/  ← 项目级安装位置
+├── guide-language.md
+├── guide-mock.md
+├── guide-vue2.md
+├── guide-check.md
+├── guide-summary.md
+└── guide-init.md
 ```
 
 ## 📖 规则详情
