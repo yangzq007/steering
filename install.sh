@@ -46,7 +46,7 @@ echo "📦 将安装到: $TARGET_DIR"
 echo ""
 echo -e "${YELLOW}⚠️  目标目录中与本项目同名的文件将被直接覆盖，如有修改请提前备份。${NC}"
 echo ""
-read -p "是否继续安装？(y/N) " confirm
+read -p "是否继续安装？(y/N) " confirm < /dev/tty
 if [[ "$confirm" != "y" && "$confirm" != "Y" ]]; then
     echo ""
     echo "已取消安装。"
